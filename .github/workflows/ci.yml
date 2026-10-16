@@ -24,6 +24,6 @@ jobs:
       - name: Lint with flake8
         run: flake8 backend/ --max-line-length=120
       - name: Run tests
-        run: pytest backend/tests/ -v --tb=short
+        run: pytest -v --tb=short
         env:
           ENVIRONMENT: test
